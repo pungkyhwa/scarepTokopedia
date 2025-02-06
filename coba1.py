@@ -25,9 +25,9 @@ soup =  BeautifulSoup(driver.page_source,"html.parser")
 
 list_nama,list_harga = [],[]
 for area in soup.find_all('div',class_='css-5wh65g'):
-    nama = area.find('div',class_='VKNwBTYQmj8+cxNrCQBD6g==').get_text()
+    nama = area.find('div',class_='_6+OpBPVGAgqnmycna+bWIw==').get_text()
     print(nama)
-    harga = area.find('div',class_='_8cR53N0JqdRc+mQCckhS0g==').get_text()
+    harga = area.find('div',class_='_67d6E1xDKIzw+i2D2L0tjw==').get_text()
     print(harga)
     print("-------------")
     list_nama.append(nama)
